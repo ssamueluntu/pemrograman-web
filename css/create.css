@@ -1,11 +1,11 @@
-.create-content{
+.create-content {
     width: 100%;
     height: 100%;
     display: block;
     border: 3px solid red;
 }
 
-.create-content .wrapper{
+.create-content .wrapper {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -13,9 +13,10 @@
     border: 3px solid blue;
 }
 
-.create-content .box{
-    width: 80%;
-    height: 50%;
+.create-content .box {
+    width: 600px;
+    max-width: 1000px;
+    padding: 50px 20px;
     background-color: #1572c9;
     border-radius: 30px;
     display: flex;
@@ -23,20 +24,30 @@
     align-items: center;
     flex-direction: column;
 }
+
 .create-content .box .box-input {
     width: 80%;
     background-color: #E6F3FF;
     padding: 5px 10px;
     border-radius: 7px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
 }
 
 .create-content .box .box-input input {
-    position: static;
     width: 100%;
+}
+
+.create-content .box input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #838383;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+    border-style: none;
+
 }
 
 .create-content .box .box-input .icon {
@@ -46,19 +57,20 @@
 .create-content .box .tugas {
     position: relative;
     width: 100%;
-    height: 30px;
+    height: 40px;
     margin-top: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
-    gap: 10px;
+    gap: 15px;
 }
 
 .create-content .box .pilih-tugas {
     padding: 5px 10px;
-    border-radius: 20px;
+    border-radius: 10px;
+    font-size: 1.1rem;
 }
+
 .create-content .box .pilih-tugas,
 .create-content .box .calender-icon {
     background-color: #E6F3FF;
@@ -66,34 +78,15 @@
     cursor: pointer;
 }
 
-.create-content .box .calender-icon{
+.create-content .box .calender-icon {
     font-size: 1.5rem;
     padding: 5px;
     border-radius: 10px;
 }
 
-input[type="text"] {
-    padding: 5px 10px;
-    background-color: transparent;
-    border: 0;
-
-}
-
-.create-content .box .box-input input::placeholder {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #838383;
-
-}
-
-.create-content .box input::placeholder {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #838383;
-}
-
 .create-content .box button {
-    text-align: center;
+    display: flex;
+    justify-content: center;
     width: 150px;
     background-color: #7EB0DF;
     border: none;
