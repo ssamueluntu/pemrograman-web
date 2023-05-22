@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CITA</title>
+    <link rel="icon" href="../img/logo-cita.png">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/create.css">
+    <link rel="stylesheet" href="../css/home.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+        <nav>
+            <div class="header menu-toggle">
+                <button>
+                    <ion-icon class="icon open" name="menu-outline"></ion-icon>
+                </button>
+            </div>
+            <div class="header brand">
+                <button> <a href="home.html">CITA</a></button>
+            </div>
+        </nav>
+        <aside class="sidebar">
+            <ul class="aside-menu">
+                <li class="aside-item">
+                    <a class="create" id="btn-create" onclick="openCreate()">
+                        <ion-icon class="icon" name="add-outline"></ion-icon>
+                        <span>Create</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a id="btn-home" onclick="openHome()">
+                        <ion-icon class="icon" name="home-outline"></ion-icon>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a id="btn-mytask" onclick="openTask()">
+                        <ion-icon class="icon" name="checkmark-outline"></ion-icon>
+                        <span>My Tasks</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a id="btn-chat" onclick="openChat()">
+                        <ion-icon class="icon" name="chatbubble-ellipses-outline"></ion-icon>
+                        <span>Chat</span>
+                    </a>
+                </li>
+                <li class="aside-item">
+                    <a id="btn-report" onclick="openChat()">
+                        <ion-icon class="icon" name="book-outline"></ion-icon>
+                        <span>Reporting</span>
+                    </a>
+                </li>
+
+            </ul>
+            <!-- <hr>
+            <div class="workspace">
+                <div class="workspace-title">
+                    <span>My Workspace</span>
+                    <ion-icon name="add-outline"></ion-icon>
+                </div>
+                <div class="workspace-item">
+                    <div class="work-item"><img src="../img/laki.png" alt=""></div>
+                    <div class="work-item"><img src="../img/wanita.png" alt=""></div>
+                    <div class="work-item"><img src="../img/laki.png" alt=""></div>
+                    <div class="invite">
+                        <ion-icon name="add-outline"></ion-icon>
+                        <span>Invite people</span>
+                    </div>
+                </div>
+                <span> <img class="img-tugas" src="../img/laki.png" alt="">
+                    <span>Tugas</span>
+                </span>
+            </div> -->
+        </aside>
+        <div class="content">
+            <!-- Menu create -->
+            <div id="create-content" class="create-content">
+                <div class="box">
+                    <div class="box-input">
+                        <input type="text" name="" id="masukkan-task" placeholder="Enter new task here">
+                        <!-- <ion-icon class="icon" name="send-outline"></ion-icon> -->
+                    </div>
+                    <div class="tugas">
+                        <select class="pilih-tugas" name="kerja" id="opsi-tugas">
+                            <option value="Tugas">Tugas</option>
+                            <option value="Pribadi">Pribadi</option>
+                            <option value="Wishlist">Wishlist</option>
+                            <option value="Kelompok">Kelompok</option>
+                        </select>
+                        <!-- Icon kalender -->
+                        <!-- <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon> -->
+                        <div class="box-input">
+
+                            <input id="masukkan-tanggal" placeholder="Masukkan Tanggal" type="text">
+                        </div>
+                    </div>
+                    <button onclick="buatTask()">Buat Task</button>
+                </div>
+            </div>
+            <!-- Akhir Menu Create -->
+
+            <!-- Menu Home -->
+            <div class="container-home" id="container-home">
+                <div class="wrapper">
+                    <span class="home-header">Home</span>
+                    <div class="home-nama">
+                        <span>Monday, May 1</span>
+                        <p>Halo, Intan</p>
+                    </div>
+
+                    <div class="mytask">
+                        <div class="content-mytask">
+                            <h1>Mytask</h1>
+                            <ul class="tab">
+                                <li><button id="tab1" class="active">Upcoming</button></li>
+                                <li><button id="tab2">Overdue</button></li>
+                                <li><button id="tab3">Complete</button></li>
+                            </ul>
+                        </div>
+                        <div class="tab-content">
+                            <table>
+                                <div>
+                                    <label for="Task">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    </label>
+                                    <input type="text" size="100" placeholder="Write it down before you forget it">
+                                </div>
+                                <div>
+                                    <label for="Task">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    </label>
+                                    <input type="text" size="100" placeholder="Pemrograman Web">
+                                </div>
+                                <div>
+                                    <label for="Task">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    </label>
+                                    <input type="text" size="100" placeholder="Tugas PDSK">
+                                </div>
+                                <div>
+                                    <label for="Task">
+                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
+                                    </label>
+                                    <input type="text" size="100" placeholder="Membuat Web Pribadi ">
+                                </div>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Akhir Menu Home -->
+        </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+
+    <!-- Icon -->
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
