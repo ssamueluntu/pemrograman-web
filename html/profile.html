@@ -84,24 +84,23 @@
             <!-- Menu create -->
             <div id="create-content" class="create-content">
                 <div class="wrapper">
-                    <div class="box-input">
-                        <input type="text" name="" id="masukkan-task" placeholder="Enter new task here">
-                        <!-- <ion-icon class="icon" name="send-outline"></ion-icon> -->
-                    </div>
-                    <div class="tugas">
-                        <select class="pilih-tugas" name="kerja" id="opsi-tugas">
-                            <option value="Tugas">Tugas</option>
-                            <option value="Pribadi">Pribadi</option>
-                            <option value="Wishlist">Wishlist</option>
-                            <option value="Kelompok">Kelompok</option>
-                        </select>
-                        <!-- Icon kalender -->
-                        <!-- <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon> -->
+                    <div class="box">
                         <div class="box-input">
-                            <input id="masukkan-tanggal" placeholder="Masukkan Tanggal" type="text">
+                            <input type="text" name="" id="masukkan-task" placeholder="Enter new task here">
+                            <!-- <ion-icon class="icon" name="send-outline"></ion-icon> -->
                         </div>
+                        <div class="tugas">
+                            <select class="pilih-tugas" name="kerja" id="opsi-tugas">
+                                <option value="Tugas">Tugas</option>
+                                <option value="Pribadi">Pribadi</option>
+                                <option value="Wishlist">Wishlist</option>
+                                <option value="Kelompok">Kelompok</option>
+                            </select>
+                            <!-- Icon kalender -->
+                            <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon>
+                        </div>
+                        <button onclick="buatTask()">Buat Task</button>
                     </div>
-                    <button onclick="buatTask()">Buat Task</button>
                 </div>
             </div>
             <!-- Akhir Menu Create -->
@@ -144,12 +143,12 @@
                                     </tr>
                                     <tr class="list-upcoming">
                                         <td><input type="checkbox">
-                                        <span>web wibu</span></td>
+                                            <span>web wibu</span></td>
                                         <td>May 1, 2021</td>
                                     </tr>
                                     <tr class="list-upcoming">
                                         <td><input type="checkbox">
-                                        <span>desri wibu</span></td>
+                                            <span>desri wibu</span></td>
                                         <td>May 2, 2021</td>
                                     </tr>
                                 </tbody>

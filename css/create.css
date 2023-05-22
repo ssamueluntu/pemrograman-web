@@ -1,13 +1,19 @@
 .create-content{
     width: 100%;
     height: 100%;
-    position: relative;
-    display: none;
-    justify-content: center;
-    align-items: center;
+    display: block;
+    border: 3px solid red;
 }
 
-.create-content .box-create{
+.create-content .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    border: 3px solid blue;
+}
+
+.create-content .box{
     width: 80%;
     height: 50%;
     background-color: #1572c9;
@@ -16,5 +22,85 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
-    border: 3px solid red;
+}
+.create-content .box .box-input {
+    width: 80%;
+    background-color: #E6F3FF;
+    padding: 5px 10px;
+    border-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.create-content .box .box-input input {
+    position: static;
+    width: 100%;
+}
+
+.create-content .box .box-input .icon {
+    color: #3D73A6;
+}
+
+.create-content .box .tugas {
+    position: relative;
+    width: 100%;
+    height: 30px;
+    margin-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    gap: 10px;
+}
+
+.create-content .box .pilih-tugas {
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.create-content .box .pilih-tugas,
+.create-content .box .calender-icon {
+    background-color: #E6F3FF;
+    color: #7EB0DF;
+    cursor: pointer;
+}
+
+.create-content .box .calender-icon{
+    font-size: 1.5rem;
+    padding: 5px;
+    border-radius: 10px;
+}
+
+input[type="text"] {
+    padding: 5px 10px;
+    background-color: transparent;
+    border: 0;
+
+}
+
+.create-content .box .box-input input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #838383;
+
+}
+
+.create-content .box input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #838383;
+}
+
+.create-content .box button {
+    text-align: center;
+    width: 150px;
+    background-color: #7EB0DF;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    padding: 5px;
+    font-size: 1.1rem;
+    margin-top: 20px;
+    cursor: pointer;
 }
