@@ -83,7 +83,7 @@
         <div class="content">
             <!-- Menu create -->
             <div id="create-content" class="create-content">
-                <div class="box">
+                <div class="wrapper">
                     <div class="box-input">
                         <input type="text" name="" id="masukkan-task" placeholder="Enter new task here">
                         <!-- <ion-icon class="icon" name="send-outline"></ion-icon> -->
@@ -98,7 +98,6 @@
                         <!-- Icon kalender -->
                         <!-- <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon> -->
                         <div class="box-input">
-
                             <input id="masukkan-tanggal" placeholder="Masukkan Tanggal" type="text">
                         </div>
                     </div>
@@ -110,48 +109,70 @@
             <!-- Menu Home -->
             <div class="container-home" id="container-home">
                 <div class="wrapper">
-                    <span class="home-header">Home</span>
-                    <div class="home-nama">
+                    <span class="home-title">Home</span>
+                    <div class="home-header">
                         <span>Monday, May 1</span>
                         <p>Halo, Intan</p>
                     </div>
 
                     <div class="mytask">
                         <div class="content-mytask">
-                            <h1>Mytask</h1>
+                            <div class="mytask-header">
+                                <img src="../img/orang.png" alt="">
+                                <h1>Mytask</h1>
+                            </div>
                             <ul class="tab">
-                                <li><button id="tab1" class="active">Upcoming</button></li>
-                                <li><button id="tab2">Overdue</button></li>
-                                <li><button id="tab3">Complete</button></li>
+                                <li><button id="btn-upcoming" class="active">Upcoming</button></li>
+                                <li><button id="btn-overdue">Overdue</button></li>
+                                <li><button id="btn-complete">Complete</button></li>
                             </ul>
                         </div>
-                        <div class="tab-content">
-                            <table>
-                                <div>
-                                    <label for="Task">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                    </label>
-                                    <input type="text" size="100" placeholder="Write it down before you forget it">
-                                </div>
-                                <div>
-                                    <label for="Task">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                    </label>
-                                    <input type="text" size="100" placeholder="Pemrograman Web">
-                                </div>
-                                <div>
-                                    <label for="Task">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                    </label>
-                                    <input type="text" size="100" placeholder="Tugas PDSK">
-                                </div>
-                                <div>
-                                    <label for="Task">
-                                        <ion-icon name="checkmark-circle-outline"></ion-icon>
-                                    </label>
-                                    <input type="text" size="100" placeholder="Membuat Web Pribadi ">
-                                </div>
+                        <div class="wrapper-upcoming">
+                            <table class="content-upcoming" border="1" cellspacing="0">
+                                <thead>
+                                    <tr>
+                                        <th class="task-name-header">Task Name</th>
+                                        <th class="due-date-header">Due Date</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>
+                                            <span></span>
+                                        </td>
+                                        <td></td>
+                                    </tr>
+                                    <tr class="list-upcoming">
+                                        <td><input type="checkbox">
+                                        <span>web wibu</span></td>
+                                        <td>May 1, 2021</td>
+                                    </tr>
+                                    <tr class="list-upcoming">
+                                        <td><input type="checkbox">
+                                        <span>desri wibu</span></td>
+                                        <td>May 2, 2021</td>
+                                    </tr>
+                                </tbody>
                             </table>
+                        </div>
+                        <div class="wrapper-overdue">
+                            <div class="content-overdue">
+                                <span>Tugas AI</span>
+                            </div>
+                            <div class="content-overdue">
+                                <span>Pengembangan game</span>
+                            </div>
+                            <div class="content-overdue">
+                                <span>Pengembangan game</span>
+                            </div>
+                        </div>
+                        <div class="wrapper-complete">
+                            <div class="content-overdue">
+                                <span>Project UTS</span>
+                            </div>
+                            <div class="content-overdue">
+                                <span>TUgas Javascript</span>
+                            </div>
                         </div>
                     </div>
                 </div>

@@ -1,95 +1,135 @@
 .container-home {
     display: block;
+    border: 5px solid red;
+    width: 100%;
+    height: 100%;
 }
 
 .container-home .wrapper {
+    position: relative;
+    border: 5px solid blue;
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    min-width: 700px;
     height: 100%;
     background-color: #e6f3ff;
     flex-direction: column;
 }
 
-.container-home .home-header {
+.container-home .home-title {
     position: absolute;
     top: 10px;
     left: 10px;
     font-size: 1.7em;
     font-weight: 500;
     color: #000;
-
-
 }
 
-.container-home .home-nama {
+.container-home .home-header {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-.container-home .home-nama span {
+.container-home .home-header span {
     font-size: 1.1em;
     font-weight: 500;
 }
 
-.container-home .home-nama p {
+.container-home .home-header p {
     font-size: 2.5em;
+    font-weight: 500;
 }
 
 .container-home .mytask {
     border: 3px solid #ddd;
     margin: 10px;
     padding: 10px;
-    text-align: center;
 }
+
+
+.container-home .content-mytask {
+    background-color: #f1f1f1;
+    padding: 15px 20px 5px 20px;
+}
+
+.container-home .content-mytask .mytask-header {
+    display: flex;
+    gap: 20px;
+}
+
+.container-home .content-mytask .mytask-header img {
+    width: 50px;
+    border-radius: 50%;
+    float: left;
+}
+
 
 .container-home .tab {
-    overflow: hidden;
-    background-color: #f1f1f1;
-}
-
-.container-home .tab li {
-    float: left;
-
+    display: flex;
+    justify-content: space-evenly;
 }
 
 .container-home .tab li button {
     display: block;
     color: black;
-    font-size: 2em;
+    padding: 10px 20px;
+    margin: 10px 0;
+    font-size: 1.5em;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
     font-weight: bold;
 }
 
-.container-home .tab li button:hover {
+.container-home .tab li button:hover,
+.container-home .tab li button:focus {
     background-color: #ddd;
+    border-bottom: 2px solid black;
 }
 
-.container-home .tab li button.active {
-    background-color: #4CAF50;
-    color: white;
+.container-home .mytask .wrapper-upcoming {
+    display: block;
+    margin: 15px 0;
+    text-align: center;
+}
+.container-home .mytask .wrapper-upcoming .content-upcoming {
+    margin: 10px auto;
+}
+.container-home .mytask .wrapper-upcoming .content-upcoming .task-name-header {
+    min-width: 300px;
+}
+.container-home .mytask .wrapper-upcoming .content-upcoming .due-date-header {
+    min-width: 100px;
 }
 
-.container-home .tab-content {
-    clear: both;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-border: 3px solid red;
+
+
+
+.container-home .mytask .wrapper-overdue {
+    display: none;
+    text-align: center;
+    margin: 15px 0;
 }
 
-.container-home table {
-    width: 100%;
-    border-collapse: collapse;
+.container-home .mytask .wrapper-overdue .content-overdue {
+    border-top: 1px #000 solid;
 }
 
-.container-home th,
-.container-home td {
-    text-align: left;
-    padding: 8px;
+.container-home .mytask .wrapper-overdue .content-overdue:nth-last-child(1) {
+    border-bottom: 1px #000 solid;
+}
+
+.container-home .mytask .wrapper-complete {
+    display: none;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.container-home .mytask .wrapper-complete .content-overdue {
+    border-top: 1px #000 solid;
+}
+
+.container-home .mytask .wrapper-complete .content-overdue:nth-last-child(1) {
+    border-bottom: 1px #000 solid;
 }
