@@ -17,7 +17,7 @@ for (let i = 0; i < list.length; i++) {
     });
 }
 
-
+// Menu
 const btnCreate = document.getElementById("btn-create")
 const btnHome = document.getElementById("btn-home")
 const btnMyTask = document.getElementById("btn-mytask")
@@ -28,11 +28,11 @@ const contentCreate = document.getElementById('create-content')
 const contentTask = document.getElementById('container-task')
 const contentChat = document.getElementById('container-chat')
 const contentHome = document.getElementById('container-home')
-const contentReport = document.getElementById('container-report')
+const contentReport = document.getElementById('container-reporting')
 
 
 btnCreate.addEventListener("click", function () {
-    contentCreate.style.display = "flex";
+    contentCreate.style.display = "block";
     contentHome.style.display = "none";
     contentChat.style.display = "none";
     contentTask.style.display = "none";
@@ -41,7 +41,7 @@ btnCreate.addEventListener("click", function () {
 
 btnHome.addEventListener("click", function () {
     contentCreate.style.display = "none";
-    contentHome.style.display = "flex";
+    contentHome.style.display = "block";
     contentChat.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
@@ -49,7 +49,7 @@ btnHome.addEventListener("click", function () {
 btnChat.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
-    contentChat.style.display = "flex";
+    contentChat.style.display = "block";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
 });
@@ -57,7 +57,7 @@ btnMyTask.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentChat.style.display = "none";
-    contentTask.style.display = "flex";
+    contentTask.style.display = "block";
     contentReport.style.display = "none";
 });
 btnReport.addEventListener("click", function () {
@@ -65,7 +65,7 @@ btnReport.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentChat.style.display = "none";
     contentTask.style.display = "none";
-    contentReport.style.display = "flex";
+    contentReport.style.display = "block";
 });
 
 // Home
