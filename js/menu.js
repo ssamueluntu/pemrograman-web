@@ -31,42 +31,43 @@ const contentChat = document.getElementById('container-chat')
 const contentReport = document.getElementById('container-reporting')
 
 
+
 btnCreate.addEventListener("click", function () {
     contentCreate.style.display = "block";
     contentHome.style.display = "none";
-    contentChat.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
+    contentChat.style.display = "none";
 });
-
 btnHome.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "block";
+    contentTask.style.display = "none";
+    contentReport.style.display = "none";
     contentChat.style.display = "none";
-    contentTask.style.display = "none";
-    contentReport.style.display = "none";
-});
-btnChat.addEventListener("click", function () {
-    contentCreate.style.display = "none";
-    contentHome.style.display = "none";
-    contentChat.style.display = "block";
-    contentTask.style.display = "none";
-    contentReport.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
-    contentChat.style.display = "none";
     contentTask.style.display = "block";
+    contentReport.style.display = "none";
+    contentChat.style.display = "none";
+});
+btnChat.addEventListener("click", function () {
+    contentCreate.style.display = "none";
+    contentHome.style.display = "none";
+    contentTask.style.display = "none";
+    contentChat.style.display = "block";
     contentReport.style.display = "none";
 });
 btnReport.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
-    contentChat.style.display = "none";
     contentTask.style.display = "none";
-    contentReport.style.display = "block";
+    contentReport.style.display = "block"
+    contentChat.style.display = "none";
 });
+
 
 // Home
 const btnUpcoming = document.getElementById("btn-upcoming")
