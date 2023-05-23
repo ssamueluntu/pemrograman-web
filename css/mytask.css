@@ -1,59 +1,56 @@
-.container-task{
+.container-task {
     display: none;
     width: 100%;
     height: 100%;
 }
 
-.container-task .wrapper-task{
+.container-task .wrapper-task {
     display: flex;
     flex-direction: column;
     padding: 10px;
 }
 
-.container-task .task-header{
-    margin: 10px 20px;
-}
-
-.container-task .task-title span{
+.container-task .task-title span {
     font-size: 2em;
     font-weight: 500;
 }
 
-.container-task .task-header .task-menu ul{
+.container-task .task-menu ul {
     display: flex;
 }
-.container-task .task-header .task-menu ul li a{
+
+.container-task .task-menu ul li a {
     margin-right: 20px;
     font-size: 1.2em;
     color: black;
     padding: 3px 20px;
 }
-.container-task .task-header .task-menu ul li a:hover{
+
+.container-task .task-menu ul li a:hover {
     text-decoration: underline;
 }
 
-
-.container-task .content-task{
+.container-task .content-task {
     display: flex;
     justify-content: center;
+    margin-top: 10px;
 }
-.container-task .content-task table{
+
+.container-task .content-task table {
     width: 100%;
 }
-.container-task .content-task table thead tr th,
-.container-task .content-task table tbody tr td{
+
+.container-task .content-task th,
+.container-task .content-task td {
     padding: 2px 5px;
 }
 
-.container-task .content-task  .col-satu{
+.container-task .col-satu {
     width: 50%;
-    
 }
-.container-task .content-task  .col-dua{
-    width: 25%;
-    text-align: center;
-}
-.container-task .content-task .col-tiga{
+
+.container-task .col-dua,
+.container-task .col-tiga {
     width: 25%;
     text-align: center;
 }

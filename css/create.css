@@ -2,7 +2,6 @@
     width: 100%;
     height: 100%;
     display: none;
-    border: 3px solid red;
 }
 
 .create-content .wrapper {
@@ -10,7 +9,6 @@
     justify-content: center;
     align-items: center;
     height: 100%;
-    border: 3px solid blue;
 }
 
 .create-content .box {
@@ -45,9 +43,9 @@
 input[type="text"] {
     padding: 5px 10px;
     background-color: transparent;
-    border: 0;
-    border-style: none;
-
+    border: none;
+    outline: none;
+    font-size: 1.3em;
 }
 
 .create-content .box .box-input .icon {
@@ -65,14 +63,11 @@ input[type="text"] {
     gap: 15px;
 }
 
-.create-content .box .pilih-tugas {
+.create-content .box .pilih-tugas,
+.create-content .box .calender-icon {
     padding: 5px 10px;
     border-radius: 10px;
     font-size: 1.1rem;
-}
-
-.create-content .box .pilih-tugas,
-.create-content .box .calender-icon {
     background-color: #E6F3FF;
     color: #7EB0DF;
     cursor: pointer;
@@ -80,8 +75,6 @@ input[type="text"] {
 
 .create-content .box .calender-icon {
     font-size: 1.5rem;
-    padding: 5px;
-    border-radius: 10px;
 }
 
 .create-content .box button {
