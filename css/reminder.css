@@ -1,0 +1,41 @@
+.container-notif{
+    display: none;
+    width: 100%;
+    height: 100%;
+    border: 2px solid red;
+}
+
+.container-notif .wrapper-notif{
+    border: 2px solid blue;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    padding: 20px;
+}
+
+.container-notif .wrapper-notif .notif-header{
+    font-size: 2em;
+    color: #3d73a6;
+    font-weight: bold;
+
+}
+
+.container-notif .wrapper-notif hr{
+    position: absolute;
+    left: 0;
+    width: 100%;
+    margin-top: 10px;
+    height: 5px;
+    background-color: #3d73a6;
+}
+
+.container-notif .wrapper-notif .mark{
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    background-color: #898989;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-weight: 500;
+    font-size: 0.8em;
+}

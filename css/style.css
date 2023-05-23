@@ -74,13 +74,14 @@ nav .brand button a {
     background-color: #3D73A6;
 }
 
-.sidebar .aside-menu {
+.sidebar .aside-menu,
+.sidebar .reminder {
     position: relative;
     width: 100%;
     padding: 5px;
 }
 
-.sidebar .aside-menu a {
+.sidebar a {
     color: white;
     cursor: pointer;
     display: inline-flex;
@@ -97,12 +98,15 @@ nav .brand button a {
     border-radius: 15px;
 }
 
-.sidebar .aside-menu a .icon {
+.sidebar a .icon{
     font-size: 1.5em;
+}
+
+.sidebar .aside-menu a .icon {
     padding-left: 1.3rem;
 }
 
-.sidebar .aside-menu a span {
+.sidebar a span {
     font-size: 0.9em;
 }
 
@@ -117,9 +121,23 @@ nav .brand button a {
     margin-top: 1rem;
     margin-bottom: 1rem;
 }
+.sidebar .reminder a span {
+    font-size: 1.2em;
+}
 
 
+.sidebar .reminder{
+    margin-top: 230px;
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+}
 
+.sidebar .reminder a{
+    display: flex;
+    justify-content: center;
+    /* gap: 5px; */
+}
 
 .sidebar.active ~ .content {
     width: calc(100% - 200px);
@@ -136,9 +154,7 @@ nav .brand button a {
     transition: 0.7s ease;
     float: right;
     /* border: 5px solid #0058aa; */
-
 }
-
 
 
 
