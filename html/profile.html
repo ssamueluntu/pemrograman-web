@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="../css/create.css">
     <link rel="stylesheet" href="../css/home.css">
     <link rel="stylesheet" href="../css/reporting.css">
+    <link rel="stylesheet" href="../css/mytask.css">
 
 </head>
 
@@ -83,7 +84,7 @@
         </aside>
         <div class="content">
             <!-- Menu create -->
-            <div id="create-content" class="create-content">
+            <div id="container-content" class="create-content">
                 <div class="wrapper">
                     <div class="box">
                         <div class="box-input">
@@ -107,7 +108,7 @@
             <!-- Akhir Menu Create -->
 
             <!-- Menu Home -->
-            <div class="container-home" id="container-home">
+            <div id="container-home" class="container-home" >
                 <div class="wrapper">
                     <span class="home-title">Home</span>
                     <div class="home-header">
@@ -178,6 +179,52 @@
                 </div>
             </div>
             <!-- Akhir Menu Home -->
+
+            <!-- Menu Task -->
+            <div id="container-task" class="container-task">
+                <div class="wrapper-task">
+                    <div class="task-header">
+                        <div class="task-title">
+                            <span>My Task</span>
+                        </div>
+                        <div class="task-menu">
+                            <ul>
+                                <li><a href="#">Semua</a></li>
+                                <li><a href="#">Pribadi</a></li>
+                                <li><a href="#">Tugas</a></li>
+                                <li><a href="#">Wishlist</a></li>
+                                <li><a href="#">Kelompok</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="content-task">
+                        <table  border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="task-name-header col-satu">Task Name</th>
+                                    <th class="due-date-header col-dua">Due Date</th>
+                                    <th class="project-header col-tiga">Project</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="list-upcoming">
+                                    <td class="col-satu"><input type="checkbox">
+                                        <span>web wibu</span></td>
+                                    <td class="col-dua">May 1, 2021</td>
+                                    <td class="col-tiga">Kelompok</td>
+                                </tr>
+                                <tr class="list-upcoming">
+                                    <td class="col-satu"><input type="checkbox">
+                                        <span>desri wibu</span></td>
+                                    <td class="col-dua">May 2, 2021</td>
+                                    <td class="col-tiga">Pribadi</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <!-- Akhir Menu Task -->
 
             <!-- Menu Reporting -->
             <div id="container-reporting" class="container-report">

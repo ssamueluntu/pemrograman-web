@@ -24,10 +24,10 @@ const btnMyTask = document.getElementById("btn-mytask")
 const btnChat = document.getElementById("btn-chat")
 const btnReport = document.getElementById("btn-report")
 
-const contentCreate = document.getElementById('create-content')
+const contentCreate = document.getElementById('container-content')
+const contentHome = document.getElementById('container-home')
 const contentTask = document.getElementById('container-task')
 const contentChat = document.getElementById('container-chat')
-const contentHome = document.getElementById('container-home')
 const contentReport = document.getElementById('container-reporting')
 
 
