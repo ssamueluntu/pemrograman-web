@@ -41,6 +41,7 @@ btnCreate.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
+    contentChat.style.display = "none";
 });
 btnHome.addEventListener("click", function () {
     contentCreate.style.display = "none";
@@ -48,6 +49,7 @@ btnHome.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
+    contentChat.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
     contentCreate.style.display = "none";
@@ -55,21 +57,23 @@ btnMyTask.addEventListener("click", function () {
     contentTask.style.display = "block";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
+    contentChat.style.display = "none";
 });
-// btnChat.addEventListener("click", function () {
-//     contentCreate.style.display = "none";
-//     contentHome.style.display = "none";
-//     contentTask.style.display = "none";
-//     contentReminder.style.display = "none";
-//     contentReport.style.display = "none";
-//     contentChat.style.display = "block";
-// });
+btnChat.addEventListener("click", function () {
+    contentCreate.style.display = "none";
+    contentHome.style.display = "none";
+    contentTask.style.display = "none";
+    contentReminder.style.display = "none";
+    contentChat.style.display = "block";
+    contentReport.style.display = "none";
+});
 btnReport.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "block"
     contentReminder.style.display = "none";
+    contentChat.style.display = "none";
 });
 btnNotif.addEventListener("click", function () {
     contentCreate.style.display = "none";
@@ -77,6 +81,7 @@ btnNotif.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none"
     contentReminder.style.display = "block";
+    contentChat.style.display = "none";
 });
 
 
