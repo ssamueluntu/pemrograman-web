@@ -6,10 +6,12 @@ const loginBox = document.querySelector('.login-box')
 const signUpBox = document.querySelector('.signup-box')
 
 btnSignUp.addEventListener("click", function () {
+    document.title = 'CITA | Sign Up'
     loginBox.style.display = "none";
     signUpBox.style.display = "block";
 });
 btnLogin.addEventListener("click", function () {
+    document.title = 'CITA | Login'
     loginBox.style.display = "block";
     signUpBox.style.display = "none";
 });

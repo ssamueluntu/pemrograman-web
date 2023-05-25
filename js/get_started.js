@@ -6,6 +6,7 @@ const contentAbout = document.getElementById('content-about');
 const contentStart = document.getElementById('content-start');
 
 btnAbout.addEventListener("click", function () {
+    document.title = 'About'
     contentAbout.style.display = "block";
     contentStart.style.display = "none";
 });

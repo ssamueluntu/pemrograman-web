@@ -36,6 +36,7 @@ const contentReminder = document.getElementById('container-notif')
 
 
 btnCreate.addEventListener("click", function () {
+    document.title = 'CITA | Create Task'
     contentCreate.style.display = "block";
     contentHome.style.display = "none";
     contentTask.style.display = "none";
@@ -44,6 +45,7 @@ btnCreate.addEventListener("click", function () {
     contentChat.style.display = "none";
 });
 btnHome.addEventListener("click", function () {
+    document.title = 'CITA | Home'
     contentCreate.style.display = "none";
     contentHome.style.display = "block";
     contentTask.style.display = "none";
@@ -52,6 +54,7 @@ btnHome.addEventListener("click", function () {
     contentChat.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
+    document.title = 'CITA | My Task'
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "block";
@@ -60,6 +63,7 @@ btnMyTask.addEventListener("click", function () {
     contentChat.style.display = "none";
 });
 btnChat.addEventListener("click", function () {
+    document.title = 'CITA | Chat'
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "none";
@@ -68,6 +72,7 @@ btnChat.addEventListener("click", function () {
     contentReport.style.display = "none";
 });
 btnReport.addEventListener("click", function () {
+    document.title = 'CITA | Reporting'
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "none";
@@ -76,6 +81,7 @@ btnReport.addEventListener("click", function () {
     contentChat.style.display = "none";
 });
 btnNotif.addEventListener("click", function () {
+    document.title = 'CITA | Reminder'
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "none";

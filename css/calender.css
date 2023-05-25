@@ -1,10 +1,4 @@
 :root {
-    --dark-body: #4d4c5a;
-    --dark-main: #141529;
-    --dark-second: #79788c;
-    --dark-hover: #323048;
-    --dark-text: #f8fbff;
-
     --light-body: #f3f8fe;
     --light-main: #fdfdfd;
     --light-second: #c3c2c8;
@@ -18,15 +12,6 @@
 
     --font-family: cursive;
 }
-
-.dark {
-    --bg-body: var(--dark-body);
-    --bg-main: var(--dark-main);
-    --bg-second: var(--dark-second);
-    --color-hover: var(--dark-hover);
-    --color-txt: var(--dark-text);
-}
-
 .light {
     --bg-body: var(--light-body);
     --bg-main: var(--light-main);
