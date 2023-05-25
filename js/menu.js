@@ -17,6 +17,7 @@ for (let i = 0; i < list.length; i++) {
     });
 }
 
+
 // Menu
 const btnCreate = document.getElementById("btn-create")
 const btnHome = document.getElementById("btn-home")
@@ -39,7 +40,6 @@ btnCreate.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
-    contentChat.style.display = "none";
     contentReminder.style.display = "none";
 });
 btnHome.addEventListener("click", function () {
@@ -48,7 +48,6 @@ btnHome.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
     contentCreate.style.display = "none";
@@ -56,23 +55,21 @@ btnMyTask.addEventListener("click", function () {
     contentTask.style.display = "block";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
 });
-btnChat.addEventListener("click", function () {
-    contentCreate.style.display = "none";
-    contentHome.style.display = "none";
-    contentTask.style.display = "none";
-    contentReminder.style.display = "none";
-    contentReport.style.display = "none";
-    contentChat.style.display = "block";
-});
+// btnChat.addEventListener("click", function () {
+//     contentCreate.style.display = "none";
+//     contentHome.style.display = "none";
+//     contentTask.style.display = "none";
+//     contentReminder.style.display = "none";
+//     contentReport.style.display = "none";
+//     contentChat.style.display = "block";
+// });
 btnReport.addEventListener("click", function () {
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "block"
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
 });
 btnNotif.addEventListener("click", function () {
     contentCreate.style.display = "none";
@@ -80,8 +77,9 @@ btnNotif.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none"
     contentReminder.style.display = "block";
-    contentChat.style.display = "none";
 });
+
+
 
 
 // Home
@@ -110,3 +108,4 @@ btnComplete.addEventListener("click", function () {
     overdue.style.display = "none";
     complete.style.display = "block";
 });
+
