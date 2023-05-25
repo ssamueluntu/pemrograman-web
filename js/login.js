@@ -13,3 +13,20 @@ btnLogin.addEventListener("click", function () {
     loginBox.style.display = "block";
     signUpBox.style.display = "none";
 });
+
+
+// Fungsi autentikasi for login 
+function validate() {
+  let username = document.getElementById("username").value;
+  let password = document.getElementById("password").value;
+
+  if (username == "") {
+      alert("Username harus di isi")
+  } else {
+      if ( username == "admin" && password == "admin") {
+          this.location.href = "profile.html";
+      } else {
+          alert("alamat email atau password salah");
+      }
+  }
+};

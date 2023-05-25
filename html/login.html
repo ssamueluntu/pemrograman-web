@@ -19,14 +19,14 @@
         <div class="login-box">
             <div class="login-item">
                 <ion-icon name="person-outline"></ion-icon>
-                <input type="text" placeholder="Gmail atau Username">
+                <input id="username" type="text" placeholder="Gmail atau Username">
             </div>
             <div class="login-item">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input type="password" placeholder="Password">
+                <input id="password" type="password" placeholder="Password">
             </div>
             <div class="button">
-                <button type="button" class="btn">Login</button>
+                <button type="submit" class="btn" value="login" onclick="validate()">Login</button>
             </div>
 
             <p>Don't have an account?<a href="#" class="signup-link">Sign Up</a></p>
@@ -45,7 +45,7 @@
                 <input type="password" placeholder="Password">
             </div>
             <div class="button">
-                <button class="btn" type="button">Sign Up</button>
+                <button class="btn" type="submit" value="sign-up">Sign Up</button>
             </div>
             <!-- <p>Have an account?<a href="#" class="login-link">Login</a></p> -->
         </div>
