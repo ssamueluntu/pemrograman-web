@@ -13,6 +13,7 @@
     <link rel="stylesheet" href="../css/reporting.css">
     <link rel="stylesheet" href="../css/mytask.css">
     <link rel="stylesheet" href="../css/reminder.css">
+    <link rel="stylesheet" href="../css/chat.css">
 
 </head>
 
@@ -44,7 +45,7 @@
                     </a>
                 </li>
                 <li class="aside-item">
-                    <a id="btn-mytask" >
+                    <a id="btn-mytask">
                         <ion-icon class="icon" name="checkmark-outline"></ion-icon>
                         <span>My Tasks</span>
                     </a>
@@ -94,7 +95,7 @@
             </div>
             <!-- Akhir Menu Create -->
             <!-- Menu Home -->
-            <div id="container-home" class="container-home" >
+            <div id="container-home" class="container-home">
                 <div class="wrapper">
                     <span class="home-title">Home</span>
                     <div class="home-header">
@@ -177,7 +178,7 @@
                         </div>
                     </div>
                     <div class="content-task">
-                        <table  border="1" cellspacing="0">
+                        <table border="1" cellspacing="0">
                             <thead>
                                 <tr>
                                     <th class="task-name-header col-satu">Task Name</th>
@@ -204,6 +205,73 @@
                 </div>
             </div>
             <!-- Akhir Menu Task -->
+            <!-- Menu Chat -->
+            <div class="container-chat">
+                <div class="wrapper-chat">
+                    <div class="chat-left">
+                        <div class="my-profile">
+                            <a href="#"><img src="../img/laki.png" alt=""></a>
+                            <a href="#">
+                                <ion-icon class="icon" name="ellipsis-horizontal"></ion-icon>
+                            </a>
+                        </div>
+                        <div class="search-friend-chat">
+                            <input type="text" placeholder="Search Friend">
+                        </div>
+                        <ul class="list-friend-chat">
+                            <li class="item-friend-chat">
+                                <a href="#"><img src="../img/laki.png" alt=""></a>
+                                <span>Desri</span>
+                            </li>
+                            <li class="item-friend-chat">
+                                <a href="#"><img src="../img/laki.png" alt=""></a>
+                                <span>Intan</span>
+                            </li>
+                            <li class="item-friend-chat">
+                                <a href="#"><img src="../img/laki.png" alt=""></a>
+                                <span>Leibniz Tumipa</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="chat-right">
+                        <div class="header-chat">
+                            <a href="#"><img src="../img/wanita.png" alt=""></a>
+                            <span>Desri</span>
+                        </div>
+                        <div id="box-chat" class="box-chat">
+                            <div id="friend-chat" class="chat friend-chat ">
+                                <img src="../img/wanita.png">
+                                <div class="item-chat ">
+                                    <span>Halo, apa kabar?</span>
+                                </div>
+                            </div>
+                            <div class="chat my-chat">
+                                <div class="item-chat">
+                                    <span>Baik, kamu apa kabar?</span>
+                                </div>
+                                <img src="../img/laki.png">
+                            </div>
+                            <div class="chat friend-chat">
+                                <img src="../img/wanita.png">
+                                <div class="item-chat friend">
+                                    <span>Baik juga</span>
+                                </div>
+                            </div>
+                            <div id="new-chat"></div>
+                        </div>
+                        <div class="box-typing">
+                            <button>
+                                <ion-icon name="attach-outline"></ion-icon>
+                            </button>
+                            <input type="text" name="" id="input-message" placeholder="Masukkan pesan">
+                            <button onclick="send()" id="btn-send">
+                                <ion-icon class="icon" name="send"></ion-icon>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Akhir Menu Chat -->
             <!-- Menu Reporting -->
             <div id="container-reporting" class="container-report">
                 <div class="content-report">
@@ -342,7 +410,9 @@
             <div id="container-notif" class="container-notif">
                 <div class="wrapper-notif">
                     <div class="notif-header">
-                        <span><ion-icon name="notifications-outline"></ion-icon></span>
+                        <span>
+                            <ion-icon name="notifications-outline"></ion-icon>
+                        </span>
                         <span>Reminder</span>
                         <hr>
                     </div>
@@ -356,6 +426,7 @@
     </div>
 
     <script src="../js/menu.js"></script>
+    <script src="../js/chat.js"></script>
 
     <!-- Icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
