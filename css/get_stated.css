@@ -43,6 +43,10 @@ body {
     padding: 5px 20px;
     cursor: pointer;
   }
+
+  .container-start .content button a{
+    color: #FFF;
+  }
   
   .container-start .content-about {
     display: none;
