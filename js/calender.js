@@ -83,3 +83,15 @@ document.querySelector('#next-year').onclick = () => {
     ++curr_year.value
     generateCalendar(curr_month.value, curr_year.value)
 }
+
+
+const popup = document.getElementById("pop-up")
+
+function openPopup() {
+    popup.classList.add("open-popup")
+}
+
+function closePopup() {
+    popup.classList.remove("open-popup")
+}
+

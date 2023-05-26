@@ -21,6 +21,7 @@
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    position: absolute;
 }
 
 .create-content .box .box-input {
@@ -89,4 +90,10 @@ input[type="text"] {
     font-size: 1.1rem;
     margin-top: 20px;
     cursor: pointer;
+}
+
+.create-content .box .tugas button {
+    margin-top: 0;
+    width: 50px;
+    background: none;
 }
