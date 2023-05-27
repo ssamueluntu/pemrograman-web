@@ -78,7 +78,6 @@
                     <div class="box">
                         <div class="box-input">
                             <input type="text" name="" id="masukkan-task" placeholder="Enter new task here">
-                            <!-- <ion-icon class="icon" name="send-outline"></ion-icon> -->
                         </div>
                         <div class="tugas">
                             <select class="pilih-tugas" name="kerja" id="opsi-tugas">
@@ -88,7 +87,16 @@
                                 <option value="Kelompok">Kelompok</option>
                             </select>
                             <!-- Icon kalender -->
-                            <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button>
+                            <div class="date-from">
+                                <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button>
+                                <span>dari</span>
+                                <input type="text">
+                            </div>
+                            <div class="date-to">
+                                <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button>
+                                <!-- <span>sampai</span> -->
+                                <input type="date">
+                            </div>
                         </div>
                         
                         <button onclick="buatTask()">Buat Task</button>

@@ -13,14 +13,15 @@
     font-family: var(--font-family);
     height: max-content;
     width: 350px;
-    background-color: #545491;
     border-radius: 30px;
     padding: 20px;
     position: relative;
     overflow: hidden;
-    /* transform: scale(1.25); */
     transform: translate(-50%, -50%)scale(0.1);
     transition: transform 0.4s, top 0.4s;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
 }
 
 
@@ -192,7 +193,6 @@
     height: 100%;
     top: 0;
     left: 0;
-    background-color: #0000e1;
     padding: 20px;
     grid-template-columns: repeat(3, auto);
     gap: 1px;
@@ -200,6 +200,10 @@
     transform: scale(1.5);
     visibility: hidden;
     pointer-events: none;
+    background-color: #0022ffc1;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
 }
 
 .month-list.show {
@@ -225,7 +229,7 @@
 }
 
 .month-list > div > div:hover {
-    background-color: #545491;
+    background-color: #565656;
 }
 
 @keyframes to-top {
