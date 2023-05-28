@@ -34,6 +34,7 @@
     position: absolute;
     right: 20px;
     top: 10px;
+    color: rgb(37, 37, 37);
 }
 
 .calendar-header {
@@ -251,3 +252,4 @@
     left: 50%;
 	transform: translate(-50%, -50%);
 }
+

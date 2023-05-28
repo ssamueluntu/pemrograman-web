@@ -88,18 +88,18 @@
                             </select>
                             <!-- Icon kalender -->
                             <div class="date-from">
-                                <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button>
-                                <span>dari</span>
-                                <input type="text">
+                                <!-- <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button> -->
+                                <span>from</span>
+                                <input id="input-date-from" type="date" >
                             </div>
                             <div class="date-to">
-                                <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button>
-                                <!-- <span>sampai</span> -->
-                                <input type="date">
+                                <!-- <button type="submit" onclick="openPopup()"> <ion-icon id="calendar-icon" class="calender-icon" name="calendar-outline"></ion-icon></button> -->
+                                <span>to</span>
+                                <input id="input-date-to" type="date">
                             </div>
                         </div>
                         
-                        <button onclick="buatTask()">Buat Task</button>
+                        <button onclick="buatTask()">Create task</button>
                     </div>
                     <!-- calender -->
                     <div id="pop-up" class="calendar">
@@ -466,7 +466,6 @@
 
     <script src="../js/menu.js"></script>
     <script src="../js/chat.js"></script>
-    <script src="../js/calender.js"></script>
 
     <!-- Icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

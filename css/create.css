@@ -102,43 +102,29 @@ input[type="text"] {
 .create-content .box .date-from,
 .create-content .box .date-to {
     display: flex;
-    gap: 1px;
+    gap: 5px;
     align-items: center;
     font-weight: 500;
-    width: 33%;
+    width: 25%;
     color: #fff;
 }
-
-.create-content .box .date-from span,
-.create-content .box .date-to span {
-    font-size: 0.9rem;
-
-}
-
-/* Mengatur tampilan input date */
-.create-content .box input[type="date"] {
-    background-color: transparent;
-    border-bottom: 2px solid #ffffff;
-    color: #ffffff;
-    font-size: 16px;
+/* .create-content .box .tugas input::placeholder {
+    color: #fff;
+    font-size: 0.7rem;
+    
+} */
+.create-content .box .tugas input {
+    width: auto;
+    /* border-bottom: 2px solid #ccc; */
+    background-color: #7EB0DF;
+    border: none;
     padding: 5px;
-    transition: border-bottom-color 0.3s ease;
+    font-size: 0.7rem;
+    color: #fff;
+    /* transition: border-bottom-color 0.3s ease; */
 }
 
-/* Mengatur tampilan input date saat dihover */
-.create-content .box input[type="date"]:hover {
-    border-bottom-color: #949494;
-}
-
-/* Mengatur tampilan input date saat mendapatkan fokus */
-.create-content .box input[type="date"]:focus {
-    border-bottom-color: #9f9f9f;
-    box-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
-    background-color: #fff;
-    color: #7EB0DF;
-}
-
-/* Mengatur tampilan tanggal dalam input date */
-.create-content .box input[type="date"]::-webkit-calendar-picker-indicator {
-    filter: invert(50%);
+.create-content .box .tugas input:focus {
+    border-bottom-color: #979797;
+    outline: none;
 }
