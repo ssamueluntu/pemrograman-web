@@ -52,7 +52,8 @@
     text-align: center;
 }
 
-.container-login form h1{
+.container-login .login-box h1,
+.container-login .signup-box h1{
     text-align: center;
 }
 

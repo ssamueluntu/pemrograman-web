@@ -19,11 +19,11 @@ btnLogin.addEventListener("click", function () {
 
 // Fungsi autentikasi for login 
 function validate() {
-  let username = document.getElementById("username").value;
-  let password = document.getElementById("password").value;
+  let username = document.getElementById("login-username").value;
+  let password = document.getElementById("login-password").value;
 
-  if (username == "") {
-      alert("Username harus di isi")
+  if (username == "" || password == "") {
+      alert("Username atau password harus di isi")
   } else {
       if ( username == "admin" && password == "admin") {
           this.location.href = "profile.html";
