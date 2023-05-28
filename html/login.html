@@ -16,39 +16,45 @@
         <header>
             <h1 class="logo">Cita</h1>
         </header>
-        <div class="login-box">
+        <form action="" method="post" class="login-box">
+            <h1>Login</h1>
             <div class="login-item">
                 <ion-icon name="person-outline"></ion-icon>
-                <input id="username" type="text" placeholder="Gmail atau Username">
+                <input id="login-username" type="text" placeholder="Gmail atau Username">
             </div>
             <div class="login-item">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input id="password" type="password" placeholder="Password">
+                <input id="login-password" type="password" placeholder="Password">
             </div>
             <div class="button">
                 <button type="submit" class="btn" value="login" onclick="validate()">Login</button>
             </div>
 
-            <p>Don't have an account?<a href="#" class="signup-link">Sign Up</a></p>
-        </div>
-        <div class="signup-box">
+            <p>Don't have an account?<a href="#" class="signup-link"> Sign Up</a></p>
+        </form>
+        <form action="" method="post" class="signup-box">
+            <h1>Sign Up</h1>
             <div class="signup-item">
                 <ion-icon name="mail"></ion-icon>
-                <input type="text" placeholder="Email">
+                <input id="sign-up-email" type="text" placeholder="Email">
             </div>
             <div class="signup-item">
                 <ion-icon name="person-outline"></ion-icon>
-                <input type="text" placeholder="Username">
+                <input id="sign-up-username" type="text" placeholder="Username">
             </div>
             <div class="signup-item">
                 <ion-icon name="lock-closed-outline"></ion-icon>
-                <input type="password" placeholder="Password">
+                <input id="sign-up-password" type="password" placeholder="Password">
+            </div>
+            <div class="signup-item">
+                <ion-icon name="lock-closed-outline"></ion-icon>
+                <input id="sign-up-password2" type="password" placeholder="Confirm password">
             </div>
             <div class="button">
                 <button class="btn" type="submit" value="sign-up">Sign Up</button>
             </div>
             <!-- <p>Have an account?<a href="#" class="login-link">Login</a></p> -->
-        </div>
+        </form>
         <div class="bottom-left">
             <img src="../img/img-login.png">
             <h3>Plan your work, work your plan!</h3>

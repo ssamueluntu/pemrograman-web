@@ -52,6 +52,10 @@
     text-align: center;
 }
 
+.container-login form h1{
+    text-align: center;
+}
+
 .container-login .login-item input,
 .container-login .signup-item input {
     border: none;
@@ -78,6 +82,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
+}
+.container-login .login-box p a{
+    color: #fff;
 }
 
 .container-login .btn {

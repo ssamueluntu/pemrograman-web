@@ -1,5 +1,5 @@
 function buatTask() {
-    // untuk menangkap 
+    // untuk menangkap  elemen html 
     const bikinTask = document.getElementById('masukkan-task').value;
     const pilihanTask = document.getElementById('opsi-tugas').value
     const tglFrom = document.getElementById('input-date-from').value

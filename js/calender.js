@@ -52,7 +52,7 @@ let month_list = calendar.querySelector('.month-list')
 
 month_names.forEach((e, index) => {
     let month = document.createElement('div')
-    month.innerHTML = `<div data-month="${index}">${e}</div>`
+    month.innerHTML = ` <button class="btn-close" type="submit" onclick="closePopup()"><ion-icon class="" name="close-outline"></ion-icon></button> <div data-month="${index}">${e}</div>`
     month.querySelector('div').onclick = () => {
         month_list.classList.remove('show')
         curr_month.value = index
@@ -93,5 +93,24 @@ function openPopup() {
 
 function closePopup() {
     popup.classList.remove("open-popup")
+}
+function closePopup() {
+    month_list.classList.remove("show")
+}
+
+
+
+
+// Fungsi untuk memasukkan tanggal terpilih ke input-date-from atau input-date-to
+function selectDate(date) {
+    // Mendapatkan referensi ke elemen input-date-from dan input-date-to
+    var inputDateTo = document.getElementById('input-date-to');
+    var inputDateFrom = document.getElementById('input-date-from');
+  if (inputDateFrom.value === '') {
+    inputDateFrom.value = date;
+  } else if (inputDateTo.value === '') {
+    inputDateTo.value = date;
+    closePopup();
+  }
 }
 
