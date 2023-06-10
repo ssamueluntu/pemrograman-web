@@ -36,7 +36,15 @@ nav {
     align-items: center;
     z-index: 99;
     height: 50px;
+    justify-content: space-between;
+}
 
+nav .profil{
+    margin-right: 1em;
+}
+
+nav .profil img{
+    border-radius: 50%;
 }
 
 button {
@@ -54,9 +62,11 @@ nav .brand button a {
     color: #FFF;
 }
 
-.header {
+nav .menu-toggle {
     padding-left: 0.5em;
 }
+
+
 
 .sidebar {
     position: fixed;
