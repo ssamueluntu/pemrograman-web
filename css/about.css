@@ -1,0 +1,67 @@
+body {
+    background: url("../img/bg-getstarted.png") no-repeat center / cover;
+    color: #FFF;
+}
+
+.container-about {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-about .content {
+    height: 200px;
+    width: 800px;
+    font-size: 1.7em;
+    text-align: center;
+}
+
+
+.container-team {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.container-about h1,
+.container-team h1 {
+    font-size: 3rem;
+    position: absolute;
+    top: 30px;
+}
+
+.container-team .content-team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0 20px;
+}
+
+.container-team .content-team .list-team {
+    padding: 7px 10px;
+    text-align: center;
+}
+
+.container-team .content-team img {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.container-team ul li ul li:nth-child(3){
+    cursor: pointer;
+    font-size: 2rem;
+    display: inline-block;
+    padding: 7px;
+}
+.container-team ul li ul li:nth-child(3):hover{
+    text-shadow: 2px 2px 5px #80008b, 2px 2px 5px #80008b, 0 0 10px #f70000, 0 0 15px #f1f504, 0 0 50px #f70000;
+    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+}

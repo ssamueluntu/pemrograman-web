@@ -5,12 +5,6 @@
     background-size: cover;
 }
 
-.container-login header h1 a {
-    padding: 20px 100px;
-    background: transparent;
-    color: #fff;
-}
-
 .container-login .logo {
     font-size: 2em;
     user-select: none;

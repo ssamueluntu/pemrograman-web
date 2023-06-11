@@ -23,6 +23,15 @@ body {
     overflow-x: hidden;
 }
 
+.logo h1 a{
+    color: #FFF;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+}
+
 
 .container {
     width: 100vw;
