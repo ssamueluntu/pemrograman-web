@@ -99,24 +99,15 @@ const btnOverdue = document.getElementById("btn-overdue")
 const btnComplete = document.getElementById("btn-complete")
 
 const upComing = document.querySelector(".wrapper-upcoming")
-const overdue = document.querySelector(".wrapper-overdue")
 const complete = document.querySelector(".wrapper-complete")
 
 btnUpcoming.addEventListener("click", function () {
     upComing.style.display = "block";
-    overdue.style.display = "none";
-    complete.style.display = "none";
-});
-
-btnOverdue.addEventListener("click", function () {
-    upComing.style.display = "none";
-    overdue.style.display = "block";
     complete.style.display = "none";
 });
 
 btnComplete.addEventListener("click", function () {
     upComing.style.display = "none";
-    overdue.style.display = "none";
     complete.style.display = "block";
 });
 

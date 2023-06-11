@@ -82,7 +82,6 @@
     margin-top: 10px;
 }
 
-.container-home .mytask .wrapper-overdue,
 .container-home .mytask .wrapper-complete {
     display: none;
     text-align: center;
@@ -102,18 +101,15 @@
     margin: auto;
 }
 
-.container-home .mytask .wrapper-upcoming .content-upcoming  thead tr th,
 .container-home .mytask .wrapper-upcoming .content-upcoming  tbody tr td{
     padding: 3px 7px;
     font-size: 1.2em;
 }
 
-.container-home .mytask .wrapper-overdue .content-overdue,
 .container-home .mytask .wrapper-complete .content-overdue {
     border-top: 1px solid #000;
 }
 
-.container-home .mytask .wrapper-overdue .content-overdue:last-child,
 .container-home .mytask .wrapper-complete .content-overdue:last-child {
     border-bottom: 1px solid #000;
 }
