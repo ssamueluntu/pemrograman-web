@@ -22,14 +22,12 @@ for (let i = 0; i < list.length; i++) {
 const btnCreate = document.getElementById("btn-create")
 const btnHome = document.getElementById("btn-home")
 const btnMyTask = document.getElementById("btn-mytask")
-const btnChat = document.getElementById("btn-chat")
 const btnReport = document.getElementById("btn-report")
 const btnNotif = document.getElementById("btn-notif")
 
 const contentCreate = document.getElementById('container-content')
 const contentHome = document.getElementById('container-home')
 const contentTask = document.getElementById('container-task')
-const contentChat = document.getElementById('container-chat')
 const contentReport = document.getElementById('container-reporting')
 const contentReminder = document.getElementById('container-notif')
 
@@ -42,7 +40,6 @@ btnCreate.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
 });
 btnHome.addEventListener("click", function () {
     document.title = 'CITA | Home'
@@ -51,7 +48,6 @@ btnHome.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
     document.title = 'CITA | My Task'
@@ -60,16 +56,6 @@ btnMyTask.addEventListener("click", function () {
     contentTask.style.display = "block";
     contentReport.style.display = "none";
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
-});
-btnChat.addEventListener("click", function () {
-    document.title = 'CITA | Chat'
-    contentCreate.style.display = "none";
-    contentHome.style.display = "none";
-    contentTask.style.display = "none";
-    contentReminder.style.display = "none";
-    contentChat.style.display = "block";
-    contentReport.style.display = "none";
 });
 btnReport.addEventListener("click", function () {
     document.title = 'CITA | Reporting'
@@ -78,7 +64,6 @@ btnReport.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "block"
     contentReminder.style.display = "none";
-    contentChat.style.display = "none";
 });
 btnNotif.addEventListener("click", function () {
     document.title = 'CITA | Reminder'
@@ -87,7 +72,6 @@ btnNotif.addEventListener("click", function () {
     contentTask.style.display = "none";
     contentReport.style.display = "none"
     contentReminder.style.display = "block";
-    contentChat.style.display = "none";
 });
 
 
@@ -95,7 +79,6 @@ btnNotif.addEventListener("click", function () {
 
 // Home
 const btnUpcoming = document.getElementById("btn-upcoming")
-const btnOverdue = document.getElementById("btn-overdue")
 const btnComplete = document.getElementById("btn-complete")
 
 const upComing = document.querySelector(".wrapper-upcoming")

@@ -106,10 +106,10 @@
     font-size: 1.2em;
 }
 
-.container-home .mytask .wrapper-complete .content-overdue {
+.container-home .mytask .wrapper-complete .content-complete {
     border-top: 1px solid #000;
 }
 
-.container-home .mytask .wrapper-complete .content-overdue:last-child {
+.container-home .mytask .wrapper-complete .content-complete:last-child {
     border-bottom: 1px solid #000;
 }
