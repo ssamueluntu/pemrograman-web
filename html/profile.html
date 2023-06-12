@@ -76,7 +76,6 @@
                             <select class="pilih-tugas" name="kerja" id="opsi-tugas">
                                 <option value="Tugas">Tugas</option>
                                 <option value="Pribadi">Pribadi</option>
-                                <option value="Wishlist">Wishlist</option>
                                 <option value="Kelompok">Kelompok</option>
                             </select>
                             <!-- Icon kalender -->
@@ -191,16 +190,49 @@
                         </div>
                         <div class="task-menu">
                             <ul>
-                                <li><a href="#">Semua</a></li>
-                                <li><a href="#">Pribadi</a></li>
-                                <li><a href="#">Tugas</a></li>
-                                <li><a href="#">Wishlist</a></li>
-                                <li><a href="#">Kelompok</a></li>
+                                <li><a id="btn-semua" href="#">Semua</a></li>
+                                <li><a id="btn-pribadi" href="#">Pribadi</a></li>
+                                <li><a id="btn-tugas" href="#">Tugas</a></li>
+                                <li><a id="btn-kelompok" href="#">Kelompok</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="content-task">
-                        <table id="table-task" border="1" cellspacing="0">
+                        <table id="semua" border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="task-name-header col-satu">Task Name</th>
+                                    <th class="due-date-header col-dua">Due Date</th>
+                                    <th class="project-header col-tiga">Project</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+
+                        <table id="pribadi" border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="task-name-header col-satu">Task Name</th>
+                                    <th class="due-date-header col-dua">Due Date</th>
+                                    <th class="project-header col-tiga">Project</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <table id="tugas" border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="task-name-header col-satu">Task Name</th>
+                                    <th class="due-date-header col-dua">Due Date</th>
+                                    <th class="project-header col-tiga">Project</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
+                        <table id="kelompok" border="1" cellspacing="0">
                             <thead>
                                 <tr>
                                     <th class="task-name-header col-satu">Task Name</th>

@@ -1,8 +1,12 @@
-const btnUpcoming = document.getElementById("btn-upcoming")
-const btnComplete = document.getElementById("btn-complete")
+const btnSemua = document.getElementById("btn-semua")
+const btnPribadi = document.getElementById("btn-pribadi")
+const btnTugas = document.getElementById("btn-tugas")
+const btnKelompok = document.getElementById("btn-kelompok")
 
-const upComing = document.querySelector(".wrapper-upcoming")
-const complete = document.querySelector(".wrapper-complete")
+const semua = document.getElementById("semua")
+const tugas = document.getElementById("tugas")
+const pribadi = document.getElementById("pribadi")
+const kelompok = document.getElementById("kelompok")
 
 btnUpcoming.addEventListener("click", function () {
     upComing.style.display = "block";
