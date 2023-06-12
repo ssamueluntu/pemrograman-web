@@ -1,0 +1,89 @@
+.container-image{
+    display: none;
+    width: 100%;
+    height: 100%;
+}
+.container-image .wrapper-image{
+    width: 100%;
+    position: relative;
+    padding: 20px;
+    border: 3px solid red;
+}
+
+.container-image .wrapper-image  form h1{
+    font-size: 1.3rem;
+}
+.container-image .wrapper-image  form ul{
+    display: flex;
+    flex-direction: column;
+    
+    font-size: 1.3rem;
+}
+
+.container-image .wrapper-image form input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #838383;
+    background-color: #101010;
+    border: #101010;
+}
+
+.container-image .wrapper-image form label{
+    font-size: .9rem;
+}
+
+.container-image .wrapper-image input[type="text"] {
+    padding: 0 10px;
+    background-color: #7eb0df79;
+    border: 1.5px solid;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+.container-image .wrapper-image .content-image img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.container-image .wrapper-image .content-image{
+    text-align: center;
+    margin-top: 20px;
+
+}
+.container-image .wrapper-image .content-image ul{
+    display: flex;
+    justify-content: center;
+    gap: 5px;
+    flex-wrap: wrap;
+}
+
+.container-image .wrapper-image .content-image li{    
+    width: 23%;
+    padding: 5px;
+}
+.container-image .wrapper-image .content-image li span{    
+    display: block;
+    text-align: center;
+}
+
+.container-image .wrapper-image .content-image .list-image{
+    position: relative;
+}
+
+.icon-delete {
+    display: none;
+}
+
+.container-image .wrapper-image .content-image .list-image:hover  .icon-delete {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 30px;
+    height: 20px;
+    color: #fff;
+    font-size: 1.7rem;
+    text-align: center;
+    line-height: 20px;
+    cursor: pointer;
+    display: block;
+}
