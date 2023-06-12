@@ -55,8 +55,15 @@
     text-align: center;
 }
 
+#semua,
 #pribadi,
 #tugas,
-#kelompok{
+#kelompok {
+    width: 100%;
+}
+
+#pribadi,
+#tugas,
+#kelompok {
     display: none;
 }

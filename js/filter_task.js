@@ -8,15 +8,31 @@ const tugas = document.getElementById("tugas")
 const pribadi = document.getElementById("pribadi")
 const kelompok = document.getElementById("kelompok")
 
-btnUpcoming.addEventListener("click", function () {
-    upComing.style.display = "block";
-    complete.style.display = "none";
+btnSemua.addEventListener("click", function () {
+    semua.style.display = "block";
+    tugas.style.display = "none";
+    pribadi.style.display = "none";
+    kelompok.style.display = "none";
+});
+btnPribadi.addEventListener("click", function () {
+    semua.style.display = "none";
+    pribadi.style.display = "block";
+    tugas.style.display = "none";
+    kelompok.style.display = "none";
+});
+btnTugas.addEventListener("click", function () {
+    semua.style.display = "none";
+    pribadi.style.display = "none";
+    tugas.style.display = "block";
+    kelompok.style.display = "none";
+});
+btnKelompok.addEventListener("click", function () {
+    semua.style.display = "none";
+    pribadi.style.display = "none";
+    tugas.style.display = "none";
+    kelompok.style.display = "block";
 });
 
-btnComplete.addEventListener("click", function () {
-    upComing.style.display = "none";
-    complete.style.display = "block";
-});
 
 
 
