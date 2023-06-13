@@ -1,43 +1,13 @@
 .container-image{
-    display: none;
+    display: block;
     width: 100%;
     height: 100%;
 }
 .container-image .wrapper-image{
     width: 100%;
+    min-height: 100%;
     position: relative;
     padding: 20px;
-    border: 3px solid red;
-}
-
-.container-image .wrapper-image  form h1{
-    font-size: 1.3rem;
-}
-.container-image .wrapper-image  form ul{
-    display: flex;
-    flex-direction: column;
-    
-    font-size: 1.3rem;
-}
-
-.container-image .wrapper-image form input::placeholder {
-    font-size: 1.2rem;
-    font-weight: 500;
-    color: #838383;
-    background-color: #101010;
-    border: #101010;
-}
-
-.container-image .wrapper-image form label{
-    font-size: .9rem;
-}
-
-.container-image .wrapper-image input[type="text"] {
-    padding: 0 10px;
-    background-color: #7eb0df79;
-    border: 1.5px solid;
-    font-size: 1rem;
-    border-radius: 7px;
 }
 
 .container-image .wrapper-image .content-image img{
@@ -48,6 +18,7 @@
 .container-image .wrapper-image .content-image{
     text-align: center;
     margin-top: 20px;
+    display: block;
 
 }
 .container-image .wrapper-image .content-image ul{
@@ -69,6 +40,17 @@
 .container-image .wrapper-image .content-image .list-image{
     position: relative;
 }
+.container-image .wrapper-image .content-image .list-image button{
+    width: 100%;
+    height: 100%;
+    border: 2px dashed #3D73A6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #000;
+    font-size: .9rem;
+    border-radius: 10px;
+}
 
 .icon-delete {
     display: none;
@@ -81,9 +63,77 @@
     width: 30px;
     height: 20px;
     color: #fff;
-    font-size: 1.7rem;
+    font-size: 3rem;
     text-align: center;
     line-height: 20px;
     cursor: pointer;
     display: block;
+}
+
+.container-form-image{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-form-image form{
+    width: 280px;
+}
+
+.container-form-image form .btn{
+    font-size: 1rem;
+    background-color: #0058aa;
+    padding: 7px 15px;
+    border-radius: 7px;
+    margin: 10px auto;
+}
+
+
+.container-form-image  form h1{
+    font-size: 1.3rem;
+    margin: auto;
+}
+
+.container-form-image  form ul{
+    display: flex;
+    flex-direction: column;
+    font-size: 1.3rem;
+    gap: 10px;
+}
+.container-form-image  form ul li{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.container-form-image form input::placeholder {
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #838383;
+    background-color: #101010;
+    border: #101010;
+}
+
+.container-form-image form label{
+    font-size: .9rem;
+}
+
+.container-form-image input[type="text"] {
+    padding: 1px 10px;
+    background-color: #7eb0df79;
+    border: 1.5px solid;
+    font-size: 1rem;
+    border-radius: 7px;
+}
+
+.container-form-image #back{
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    font-size: 1.2rem;
+    background-color: #0058aa;
+    color: #fff;
+    padding: 5px 15px;
+    border-radius: 10px;
 }

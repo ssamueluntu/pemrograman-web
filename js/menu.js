@@ -66,15 +66,13 @@ btnReport.addEventListener("click", function () {
     contentImage.style.display = "none";
 });
 btnImage.addEventListener("click", function () {
-    document.title = 'CITA | Reminder'
+    document.title = 'CITA | Image'
     contentCreate.style.display = "none";
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "none"
     contentImage.style.display = "block";
 });
-
-
 
 
 // Home
@@ -94,3 +92,24 @@ btnComplete.addEventListener("click", function () {
     complete.style.display = "block";
 });
 
+
+
+// Image
+
+const btnAddImg = document.getElementById('add-image')
+const btnBack = document.getElementById('back')
+
+const formAddImg = document.getElementById('add-form')
+const contentImg = document.getElementById('content-image')
+
+
+btnAddImg.addEventListener("click", function () {
+    document.title = 'Tambah gambar'
+    formAddImg.style.display = "flex";
+    contentImg.style.display = "none";
+});
+btnBack.addEventListener("click", function () {
+    document.title = 'Gambar'
+    formAddImg.style.display = "none";
+    contentImg.style.display = "block";
+});
