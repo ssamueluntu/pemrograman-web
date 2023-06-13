@@ -37,3 +37,5 @@ function formatDate(date) {
 
 const now = new Date();
 dateElement.textContent = formatDate(now);
+
+

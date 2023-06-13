@@ -39,21 +39,14 @@ body {
 }
 
 nav {
-    position: relative;
+    position: fixed;
     background-color: #3D73A6;
     display: flex;
     align-items: center;
-    z-index: 99;
+    z-index: 9999;
     height: 50px;
+    width: 100vw;
     justify-content: space-between;
-}
-
-nav .profil{
-    margin-right: 1em;
-}
-
-nav .profil img{
-    border-radius: 50%;
 }
 
 button {
@@ -75,6 +68,27 @@ nav .menu-toggle {
     padding-left: 0.5em;
 }
 
+nav  .logout  a{
+    cursor: pointer;
+    background-color: #e6f3ff;
+    margin-right: 40px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 5px 10px;
+    gap: 7px;
+
+    color: #0058aa;
+}
+
+nav .logout a span{
+    font-size: 0.9rem;
+}
+
+nav .logout a .icon{
+    font-size: 1.5rem;
+}
 
 
 .sidebar {
@@ -86,6 +100,7 @@ nav .menu-toggle {
     background-color: #3D73A6;
     z-index: 1;
     transition: 0.7s ease;
+    top: 50px;
 }
 
 .sidebar.active {
@@ -172,7 +187,7 @@ nav .menu-toggle {
     z-index: 99;
     transition: 0.7s ease;
     float: right;
-    /* border: 5px solid #0058aa; */
+    margin-top: 50px;
 }
 
 

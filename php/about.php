@@ -1,3 +1,14 @@
+<?php 
+
+session_start();
+
+if( isset($_SESSION["login"])){
+    header("Location: php/profile.php");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -11,7 +22,7 @@
 
 <body>
     <div class="logo">
-        <h1><a href="../index.html">CITA</a></h1>
+        <h1><a href="../index.php">CITA</a></h1>
     </div>
     <div class="container-about">
         <h1>About</h1>
@@ -29,8 +40,8 @@
             <li class="list-team">
                 <img src="../img/kuroko.jpg" alt="">
                 <ul class="name-team">
-                    <li>Samuel Untu</li>
-                    <li>210211060215</li>
+                    <li>Desriyanti Dea</li>
+                    <li>210211060051</li>
                     <li>
                         <ion-icon name="logo-instagram"></ion-icon>
                     </li>
@@ -39,8 +50,8 @@
             <li class="list-team">
                 <img src="../img/kuroko.jpg" alt="">
                 <ul class="name-team">
-                    <li>Samuel Untu</li>
-                    <li>210211060215</li>
+                    <li>Intan Endeka</li>
+                    <li>210211060174</li>
                     <li>
                         <ion-icon name="logo-instagram"></ion-icon>
                     </li>
@@ -49,8 +60,8 @@
             <li class="list-team">
                 <img src="../img/kuroko.jpg" alt="">
                 <ul class="name-team">
-                    <li>Samuel Untu</li>
-                    <li>210211060215</li>
+                    <li>Leibniz Tumipa</li>
+                    <li>210211060027</li>
                     <li>
                         <ion-icon name="logo-instagram"></ion-icon>
                     </li>

@@ -1,3 +1,17 @@
+<?php 
+
+session_start();
+
+require 'function.php';
+
+$image = query("SELECT * FROM gambar");
+
+if( !isset($_SESSION["login"])){
+    header("Location: ../index.php");
+    exit;
+}
+
+?>
 <!DOCTYPE html>
 <html lang="en">
 
@@ -26,8 +40,11 @@
                     <ion-icon class="icon open" name="menu-outline"></ion-icon>
                 </button>
             </div>
-            <div class="header profil">
-                <button> <a href="../index.html"> <img src="../img/laki.png" width="30px" alt="profil"></a></button>
+            <div class="header logout">
+                <a href="logout.php"> 
+                    <span>Logout</span>
+                    <ion-icon class="icon" name="log-out-outline"></ion-icon>
+                </a>
             </div>
         </nav>
         <aside class="sidebar">
@@ -132,57 +149,18 @@
                 <div class="wrapper">
                     <span class="home-title">Home</span>
                     <div class="home-header">
-                        <span>Monday, May 1</span>
-                        <p>Halo, Intan</p>
-                    </div>
-
-                    <div class="mytask">
-                        <div class="content-mytask">
-                            <div class="mytask-header">
-                                <img src="../img/orang.png" alt="">
-                                <h1>Mytask</h1>
-                            </div>
-                            <ul class="tab">
-                                <li><button id="btn-upcoming" class="active">Upcoming</button></li>
-                                <li><button id="btn-complete">Complete</button></li>
-                            </ul>
+                        <div class="datetime">
+                            <div class="date"></div>
                         </div>
-                        <div class="wrapper-upcoming">
-                            <table class="content-upcoming" border="1" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th class="task-name-header">Task Name</th>
-                                        <th class="due-date-header">Due Date</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr class="list-upcoming">
-                                        <td><input type="checkbox">
-                                            <span>web wibu</span></td>
-                                        <td>May 1, 2021</td>
-                                    </tr>
-                                    <tr class="list-upcoming">
-                                        <td><input type="checkbox">
-                                            <span>desri wibu</span></td>
-                                        <td>May 2, 2021</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div class="wrapper-complete">
-                            <div class="content-complete">
-                                <span>Project UTS</span>
-                            </div>
-                            <div class="content-complete">
-                                <span>TUgas Javascript</span>
-                            </div>
-                        </div>
+                        <p>Halo</p>
+                        <h6>Let's Finish Your Plan</h6>
                     </div>
                 </div>
             </div>
             <!-- Akhir Menu Home -->
             <!-- Menu Task -->
-            <div id="container-task" class="container-task">
+             <!-- Menu Task -->
+             <div id="container-task" class="container-task">
                 <div class="wrapper-task">
                     <div class="task-header">
                         <div class="task-title">
@@ -190,66 +168,22 @@
                         </div>
                         <div class="task-menu">
                             <ul>
-                                <li><a id="btn-semua" href="#">Semua</a></li>
-                                <li><a id="btn-pribadi" href="#">Pribadi</a></li>
-                                <li><a id="btn-tugas" href="#">Tugas</a></li>
-                                <li><a id="btn-kelompok" href="#">Kelompok</a></li>
+                                <li><a id="btn-semua" href="#">Daftar task</a></li>
                             </ul>
                         </div>
                     </div>
                     <div class="content-task">
-                        <div id="semua">
-                            <table border="1" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th class="task-name-header col-satu">Task Name</th>
-                                        <th class="due-date-header col-dua">Due Date</th>
-                                        <th class="project-header col-tiga">Project</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="pribadi">
-                            <table border="1" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th class="task-name-header col-satu">Task Name</th>
-                                        <th class="due-date-header col-dua">Due Date</th>
-                                        <th class="project-header col-tiga">Project</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="tugas">
-                            <table border="1" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th class="task-name-header col-satu">Task Name</th>
-                                        <th class="due-date-header col-dua">Due Date</th>
-                                        <th class="project-header col-tiga">Project</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
-                        <div id="kelompok">
-                            <table border="1" cellspacing="0">
-                                <thead>
-                                    <tr>
-                                        <th class="task-name-header col-satu">Task Name</th>
-                                        <th class="due-date-header col-dua">Due Date</th>
-                                        <th class="project-header col-tiga">Project</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                </tbody>
-                            </table>
-                        </div>
+                        <table id="table-task" border="1" cellspacing="0">
+                            <thead>
+                                <tr>
+                                    <th class="task-name-header col-satu">Task Name</th>
+                                    <th class="due-date-header col-dua">Due Date</th>
+                                    <th class="project-header col-tiga">Project</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                            </tbody>
+                        </table>
                     </div>
                 </div>
             </div>
@@ -391,51 +325,46 @@
             <!-- Menu Image -->
             <div id="container-image" class="container-image">
                 <div class="wrapper-image">
-                    <form action="" method="POST">
-                        <ul>
-                            <li>
-                                <h1>Tambah gambar</h1>
-                            </li>
-                            <li>
-                                <label for="name-img">Nama</label>
-                                <input type="text" name="name-img" id="name-img">
-                            </li>
-                            <li>
-                                <label for="img">Gambar</label>
-                                <input type="file" name="img" id="img">
-                            </li>
-                            <li>
-                                <button class="btn" type="submit">Kirim</button>
-                            </li>
-                        </ul>
-                    </form>
-                    <div class="content-image">
+                    <div id="add-form" class="container-form-image">
+                        <button id="back">
+                            <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
+                            <span>Back</span>
+                        </button>
+                        <form action="" method="post">
+                                <ul>
+                                    <li>
+                                        <h1>Tambah gambar</h1>
+                                    </li>
+                                    <li>
+                                        <label for="nama">Nama</label>
+                                        <input type="text" name="nama" id="nama">
+                                    </li>
+                                    <li>
+                                        <label for="gambar">Gambar</label>
+                                        <input type="text" name="gambar" id="gambar">
+                                    </li>
+                                    <li>
+                                        <button class="btn" type="submit" name="submit">Tambah Gambar</button>
+                                    </li>
+                                </ul>
+                        </form>
+                    </div>
+                    <div id="content-image" class="content-image">
                         <h1>Gambar</h1>
                         <ul>
+                            <?php foreach( $image as $img ) : ?>
                             <li class="list-image">
                                 <ion-icon class="icon-delete" name="close-outline"></ion-icon>
-                                <img src="../img/kuroko.jpg" alt="">
-                                <span class="name-img">Kuroko Tetsuya</span>
+                                <img src="../img/<?= $img['gambar']; ?>" alt="<?= $img["nama"]; ?>">
+                                <span class="name-img"><?= $img['nama']; ?></span>
                             </li>
+                            <?php endforeach; ?>
                             <li class="list-image">
-                                <ion-icon class="icon-delete" name="close-outline"></ion-icon>
-                                <img src="../img/kuroko.jpg" alt="">
-                                <span class="name-img">Kuroko Tetsuya</span>
-                            </li>
-                            <li class="list-image">
-                                <ion-icon class="icon-delete" name="close-outline"></ion-icon>
-                                <img src="../img/kuroko.jpg" alt="">
-                                <span class="name-img">Kuroko Tetsuya</span>
-                            </li>
-                            <li class="list-image">
-                                <ion-icon class="icon-delete" name="close-outline"></ion-icon>
-                                <img src="../img/kuroko.jpg" alt="">
-                                <span class="name-img">Kuroko Tetsuya</span>
-                            </li>
-                            <li class="list-image">
-                                <ion-icon class="icon-delete" name="close-outline"></ion-icon>
-                                <img src="../img/kuroko.jpg" alt="">
-                                <span class="name-img">Kuroko Tetsuya</span>
+                                <button id="add-image">
+                                    <ion-icon class="icon icon-add" name="add-outline"></ion-icon>
+                                    <span>add image</span>
+                                </button>
+                                
                             </li>
                         </ul>
                     </div>
@@ -448,6 +377,7 @@
     <script src="../js/menu.js"></script>
     <script src="../js/link_task.js"></script>
     <script src="../js/filter_task.js"></script>
+    <script src="../js/date.js"></script>
 
     <!-- Icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

@@ -1,3 +1,14 @@
+<?php 
+
+session_start();
+
+if( isset($_SESSION["login"])){
+    header("Location: php/profile.php");
+    exit;
+}
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -12,9 +23,9 @@
     <link rel="stylesheet" href="css/get_started.css">
 </head>
 
-<body>
+<body> 
     <div class="logo">
-        <h1><a href="index.html">CITA</a></h1>
+        <h1><a href="../index.php">CITA</a></h1>
     </div>
     <div class="container-start">
         <div id="content-start" class="content-start">
@@ -23,8 +34,8 @@
                 <h3>Cita makes it easy to plan tasks by creating to-do lists</h3>
                 <h1>Plan your work, work your plan!</h1>
                 <div class="button">
-                    <button id="btn-about"><a href="html/about.html">About</a></button>
-                    <button id="btn-started"><a href="html/login.html">Get Started</a></button>
+                    <button id="btn-about"><a href="php/about.php">About</a></button>
+                    <button id="btn-started"><a href="php/register.php">Get Started</a></button>
                 </div>
             </div>
         </div>

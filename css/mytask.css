@@ -15,9 +15,6 @@
     font-weight: 500;
 }
 
-.container-task .task-menu ul {
-    display: flex;
-}
 
 .container-task .task-menu ul li a {
     margin-right: 20px;
@@ -44,26 +41,6 @@
 .container-task .content-task td {
     padding: 2px 5px;
 }
-
-.container-task .col-satu {
-    width: 50%;
-}
-
-.container-task .col-dua,
-.container-task .col-tiga {
-    width: 25%;
-    text-align: center;
-}
-
-#semua,
-#pribadi,
-#tugas,
-#kelompok {
+.container-task .content-task #table-task{
     width: 100%;
-}
-
-#pribadi,
-#tugas,
-#kelompok {
-    display: none;
 }
