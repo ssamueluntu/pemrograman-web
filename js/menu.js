@@ -23,13 +23,13 @@ const btnCreate = document.getElementById("btn-create")
 const btnHome = document.getElementById("btn-home")
 const btnMyTask = document.getElementById("btn-mytask")
 const btnReport = document.getElementById("btn-report")
-
+const btnImage = document.getElementById("btn-image")
 
 const contentCreate = document.getElementById('container-content')
 const contentHome = document.getElementById('container-home')
 const contentTask = document.getElementById('container-task')
 const contentReport = document.getElementById('container-reporting')
-
+const contentImage = document.getElementById('container-image')
 
 
 
@@ -39,7 +39,7 @@ btnCreate.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
-
+    contentImage.style.display = "none";
 });
 btnHome.addEventListener("click", function () {
     document.title = 'CITA | Home'
@@ -47,7 +47,7 @@ btnHome.addEventListener("click", function () {
     contentHome.style.display = "block";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
-
+    contentImage.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
     document.title = 'CITA | My Task'
@@ -55,7 +55,7 @@ btnMyTask.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "block";
     contentReport.style.display = "none";
-
+    contentImage.style.display = "none";
 });
 btnReport.addEventListener("click", function () {
     document.title = 'CITA | Reporting'
@@ -63,7 +63,15 @@ btnReport.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "block"
-
+    contentImage.style.display = "none";
+});
+btnImage.addEventListener("click", function () {
+    document.title = 'CITA | Image'
+    contentCreate.style.display = "none";
+    contentHome.style.display = "none";
+    contentTask.style.display = "none";
+    contentReport.style.display = "none"
+    contentImage.style.display = "block";
 });
 
 
