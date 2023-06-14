@@ -35,11 +35,7 @@ if( isset($_POST["submit"])){
     <div id="container-image" class="container-image">
         <div class="wrapper-image">
             <div id="add-form" class="container-form-image">
-                <button id="back">
-                    <ion-icon class="icon" name="arrow-back-outline"></ion-icon>
-                    <span>Back</span>
-                </button>
-                <form action="" method="post">
+                <form action="" method="post" enctype="multipart/form-data">
                     <ul>
                         <li>
                             <h1>Tambah gambar</h1>
@@ -50,7 +46,7 @@ if( isset($_POST["submit"])){
                         </li>
                         <li>
                             <label for="gambar">Gambar</label>
-                            <input type="text" name="gambar" id="gambar" required>
+                            <input type="file" name="gambar" id="gambar" required>
                         </li>
                         <li>
                             <button class="btn" type="submit" name="submit">Tambah Gambar</button>
@@ -73,20 +69,11 @@ if( isset($_POST["submit"])){
                         <span class="name-img"><?= $img['nama']; ?></span>
                     </li>
                     <?php endforeach; ?>
-                    <li class="list-image">
-                        <button id="add-image">
-                            <ion-icon class="icon icon-add" name="add-outline"></ion-icon>
-                            <span>add image</span>
-                        </button>
-                        
-                    </li>
                 </ul>
             </div>
         </div>
     </div>
             <!-- Akhir Menu Image -->
-
-        <script src="../js/image.js"></script>
                 <!-- Icon -->
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>

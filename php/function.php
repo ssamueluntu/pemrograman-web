@@ -2,6 +2,7 @@
 
 
 // koneksi ke database
+// $conn = mysqli_connect("sql111.infinityfree.com", "if0_34417804", "7dils5CITA1", "if0_34417804_cita");
 $conn = mysqli_connect("localhost", "root", "", "project_uas_test");
 
 
