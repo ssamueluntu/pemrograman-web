@@ -24,7 +24,7 @@ if ( isset($_POST["login"])){
     $loginUsername = $_POST["login-username"];
     $loginPassword = $_POST["login-password"];
 
-    $result = mysqli_query($conn, "SELECT * FROM users WHERE username = '$loginUsername'");
+    $result = mysqli_query($conn, "SELECT * FROM user WHERE username = '$loginUsername'");
 
     // cek username
     if(mysqli_num_rows($result) === 1 ){

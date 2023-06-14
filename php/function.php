@@ -2,7 +2,7 @@
 
 
 // koneksi ke database
-$conn = mysqli_connect("localhost", "root", "", "cita");
+$conn = mysqli_connect("localhost", "root", "", "project_uas_test");
 
 
 // Fungsi gambar
@@ -16,6 +16,27 @@ function query($query){
     return $rows;
 }
 
+function add($data){
+    global $conn;
+
+    $nama = htmlspecialchars( $data["nama"]);
+    $gambar = htmlspecialchars($data["gambar"]) ;
+
+    $query = "INSERT INTO gambar VALUES ('', '$nama', '$gambar')";
+
+    mysqli_query($conn, $query);
+
+    return mysqli_affected_rows($conn);
+}
+
+function delete($id){
+    global $conn;
+
+    mysqli_query($conn, "DELETE FROM gambar WHERE id = $id");
+
+    return mysqli_affected_rows($conn);
+}
+
 
 function registrasi($data){
     global $conn;
@@ -25,7 +46,7 @@ function registrasi($data){
     $signUpPassword2 = mysqli_real_escape_string($conn, $data["sign-up-password2"]);
 
     // cek usernama sudah ada ato belum
-    $result = mysqli_query($conn, "SELECT username FROM users WHERE username = '$signUpUsername'");
+    $result = mysqli_query($conn, "SELECT username FROM user WHERE username = '$signUpUsername'");
 
     if( mysqli_fetch_assoc($result)) {
         echo    "<script>
@@ -46,7 +67,7 @@ function registrasi($data){
     $signUpPassword = password_hash($signUpPassword, PASSWORD_DEFAULT);
 
     //  tambahkan userbaru ke database
-    mysqli_query($conn, "INSERT INTO users VALUES('', '$signUpUsername', '$signUpPassword')");
+    mysqli_query($conn, "INSERT INTO user VALUES('', '$signUpUsername', '$signUpPassword')");
 
     return mysqli_affected_rows($conn);
 }

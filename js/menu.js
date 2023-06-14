@@ -23,13 +23,13 @@ const btnCreate = document.getElementById("btn-create")
 const btnHome = document.getElementById("btn-home")
 const btnMyTask = document.getElementById("btn-mytask")
 const btnReport = document.getElementById("btn-report")
-const btnImage = document.getElementById("btn-image")
+// const btnImage = document.getElementById("btn-image")
 
 const contentCreate = document.getElementById('container-content')
 const contentHome = document.getElementById('container-home')
 const contentTask = document.getElementById('container-task')
 const contentReport = document.getElementById('container-reporting')
-const contentImage = document.getElementById('container-image')
+// const contentImage = document.getElementById('container-image')
 
 
 
@@ -39,7 +39,7 @@ btnCreate.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
-    contentImage.style.display = "none";
+    // contentImage.style.display = "none";
 });
 btnHome.addEventListener("click", function () {
     document.title = 'CITA | Home'
@@ -47,7 +47,7 @@ btnHome.addEventListener("click", function () {
     contentHome.style.display = "block";
     contentTask.style.display = "none";
     contentReport.style.display = "none";
-    contentImage.style.display = "none";
+    // contentImage.style.display = "none";
 });
 btnMyTask.addEventListener("click", function () {
     document.title = 'CITA | My Task'
@@ -55,7 +55,7 @@ btnMyTask.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "block";
     contentReport.style.display = "none";
-    contentImage.style.display = "none";
+    // contentImage.style.display = "none";
 });
 btnReport.addEventListener("click", function () {
     document.title = 'CITA | Reporting'
@@ -63,53 +63,14 @@ btnReport.addEventListener("click", function () {
     contentHome.style.display = "none";
     contentTask.style.display = "none";
     contentReport.style.display = "block"
-    contentImage.style.display = "none";
+    // contentImage.style.display = "none";
 });
-btnImage.addEventListener("click", function () {
-    document.title = 'CITA | Image'
-    contentCreate.style.display = "none";
-    contentHome.style.display = "none";
-    contentTask.style.display = "none";
-    contentReport.style.display = "none"
-    contentImage.style.display = "block";
-});
+// btnImage.addEventListener("click", function () {
+//     document.title = 'CITA | Image'
+//     contentCreate.style.display = "none";
+//     contentHome.style.display = "none";
+//     contentTask.style.display = "none";
+//     contentReport.style.display = "none"
+//     contentImage.style.display = "block";
+// });
 
-
-// Home
-const btnUpcoming = document.getElementById("btn-upcoming")
-const btnComplete = document.getElementById("btn-complete")
-
-const upComing = document.querySelector(".wrapper-upcoming")
-const complete = document.querySelector(".wrapper-complete")
-
-btnUpcoming.addEventListener("click", function () {
-    upComing.style.display = "block";
-    complete.style.display = "none";
-});
-
-btnComplete.addEventListener("click", function () {
-    upComing.style.display = "none";
-    complete.style.display = "block";
-});
-
-
-
-// Image
-
-const btnAddImg = document.getElementById('add-image')
-const btnBack = document.getElementById('back')
-
-const formAddImg = document.getElementById('add-form')
-const contentImg = document.getElementById('content-image')
-
-
-btnAddImg.addEventListener("click", function () {
-    document.title = 'Tambah gambar'
-    formAddImg.style.display = "flex";
-    contentImg.style.display = "none";
-});
-btnBack.addEventListener("click", function () {
-    document.title = 'Gambar'
-    formAddImg.style.display = "none";
-    contentImg.style.display = "block";
-});

@@ -4,12 +4,27 @@ session_start();
 
 require 'function.php';
 
-$image = query("SELECT * FROM gambar");
+
 
 if( !isset($_SESSION["login"])){
     header("Location: ../index.php");
     exit;
 }
+
+if( isset($_POST["submit"])){
+
+    if(add($_POST) > 0){
+        echo    "<script>
+                    alert('username sudah terdaftar!')";
+                    
+                "</script>";
+    } else{
+        echo 'Gambar gagal ditambahkan!!';
+    }
+
+}
+
+$image = query("SELECT * FROM gambar");
 
 ?>
 <!DOCTYPE html>
@@ -75,7 +90,7 @@ if( !isset($_SESSION["login"])){
                 </li>
             </ul>
             <span class="reminder">
-                <a id="btn-image">
+                <a href="image.php" id="btn-image">
                     <span>Image</span>
                     <ion-icon class="icon" name="image-outline"></ion-icon>
                 </a>
@@ -337,11 +352,11 @@ if( !isset($_SESSION["login"])){
                                     </li>
                                     <li>
                                         <label for="nama">Nama</label>
-                                        <input type="text" name="nama" id="nama">
+                                        <input type="text" name="nama" id="nama" required>
                                     </li>
                                     <li>
                                         <label for="gambar">Gambar</label>
-                                        <input type="text" name="gambar" id="gambar">
+                                        <input type="text" name="gambar" id="gambar" required>
                                     </li>
                                     <li>
                                         <button class="btn" type="submit" name="submit">Tambah Gambar</button>
@@ -354,7 +369,8 @@ if( !isset($_SESSION["login"])){
                         <ul>
                             <?php foreach( $image as $img ) : ?>
                             <li class="list-image">
-                                <ion-icon class="icon-delete" name="close-outline"></ion-icon>
+                                <a class="icon-delete" href=""><ion-icon name="close-outline"></ion-icon></a>
+                                
                                 <img src="../img/<?= $img['gambar']; ?>" alt="<?= $img["nama"]; ?>">
                                 <span class="name-img"><?= $img['nama']; ?></span>
                             </li>
